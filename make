@@ -3,7 +3,7 @@ CC = g++
 CFLAGS  = -Wall
 PROG = Blocker
 
-SRCS = main.cpp
+SRCS = main.cpp display.cpp game.cpp
 
 LIBS = -lglut -lGLU -lGL
 

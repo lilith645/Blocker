@@ -1,16 +1,14 @@
-#ifdef __APPLE__
-#include <GLUT/glut.h>
-#include <GLUT/freeglut.h>
-#else
-#include <GL/glut.h>
-#include <GL/freeglut.h>
-#endif
-
 #include <stdio.h>
+#include "display.h"
+#include "game.h"
 
 int main(int argc, char** argv) {
 
+        display displayer(argc, argv);
 
-        printf("Hello world\n");
+	displayer.setup();
+	
+	
+
         return 0;
     }
