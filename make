@@ -14,3 +14,4 @@ $(PROG):	$(SRCS)
 
 clean:
 	rm -f $(PROG) 
+
