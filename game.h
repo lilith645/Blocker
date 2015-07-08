@@ -10,14 +10,21 @@
 #endif
 
 #include <iostream>
+#include <math.h> 
 
 class game 
 {
     public:
-        void startGame();
-    protected:
+        int blocks[10][10];
         game();
-        void drawGame();
+        void start();
+        void stop();
+        void draw();
+        bool isRunning();
+    protected:         
+        bool running; 
+        void drawBlocks();
+        void populateBlocks();
 };
 
 #endif

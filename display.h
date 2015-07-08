@@ -12,22 +12,25 @@
 #include <stdio.h>
 
 #include "game.h"
-
+#include "menu.h"
 
 class display
 {
-    protected:
-        int argc; 
-        char** argv;        
-        static void reshape(GLsizei width, GLsizei height); 
-        static void keyboard(unsigned char key, int x, int y);
-        static void specialKeys(int key, int x, int y);
-        static void mouse(int button, int state, int x, int y);
-        static void draw();
     public:
-        display(int argc1, char** argv1);
+        display();
         void setup();
-   
+        void reshape(GLsizei width, GLsizei height); 
+        void keyboard(unsigned char key, int x, int y);
+        void specialKeys(int key, int x, int y);
+        void mouse(int button, int state, int x, int y);
+        void Timer(int value);
+        void draw();
+        void changeSection();
+
+    protected: 
+        game Game;
+        menu Menu;       
+       
 };
 
 #endif
