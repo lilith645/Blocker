@@ -35,13 +35,8 @@ void display::mouse(int button, int state, int x, int y) {
 void display::draw() {
 
   
-    Menu.draw();
-    if(Game.isRunning() == false) {
-        Menu.draw();
-    }
-    else {
-        //Game.draw();
-    }
+    Game.draw();
+  
     glutSwapBuffers(); 
 }
 

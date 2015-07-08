@@ -5,7 +5,7 @@ PROG = Blocker
 
 SRCS = main.cpp display.cpp game.cpp menu.cpp
 
-LIBS = -lglut -lGLU -lGL
+LIBS = -lglut -lGLU -lGL -lSOIL
 
 all: $(PROG)
 

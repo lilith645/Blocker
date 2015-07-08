@@ -12,11 +12,6 @@
 #include <iostream>
 #include <math.h> 
 
-typedef struct {
-    float xOffset;
-    float yOffset;
-    float color;
-} coord;
 
 
 class menu 
@@ -27,8 +22,6 @@ class menu
         void stop();
         void start();
     protected:      
-        coord newCorrd;
-        void drawSquare(coord Coord);
         bool isRunning;    
 };
 
