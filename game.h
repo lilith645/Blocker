@@ -6,13 +6,13 @@
 #include <GLUT/freeglut.h>
 #include <OpenGL/glu.h>
 #include <OpenGL/glext.h>
-#include "SOIL/SOIL.h"
+//#include "SOIL/SOIL.h"
 #else
 #include <GL/glut.h>
 #include <GL/freeglut.h>
 #include <GL/glu.h>
 
-#include "SOIL/SOIL.h"
+//#include "SOIL/SOIL.h"
 #endif
 
 #include <iostream>

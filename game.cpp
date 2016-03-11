@@ -37,7 +37,7 @@ void game::start() {
 }
 
 void game::stop() {
-    SOIL_free_image_data(image);
+  //  SOIL_free_image_data(image);
     running = false;
 }
 
