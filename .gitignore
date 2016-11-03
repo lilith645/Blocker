@@ -3,7 +3,7 @@
 *.lo
 *.o
 *.obj
-Return-void
+Blocker
 
 # Precompiled Headers
 *.gch
