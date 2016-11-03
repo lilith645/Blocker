@@ -3,9 +3,9 @@ CC = g++
 CFLAGS  = -Wall
 PROG = Blocker
 
-SRCS = main.cpp display.cpp game.cpp menu.cpp
+SRCS = ./src/main.cpp ./src/Game.cpp ./src/Block.cpp ./src/Random.cpp
 
-LIBS = -lglut -lGLU -lGL -lSOIL
+LIBS = -lglfw -lGLC -lGLU -lGL -lpng
 
 all: $(PROG)
 
