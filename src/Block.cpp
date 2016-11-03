@@ -13,13 +13,12 @@ void Block::setup(int x, int y) {
   this->y = y;
 }
 
-void Block::setColour(int colour) {
-  this->colour = colour;
-}
-
 void Block::draw() {
   
   switch(colour) {
+    case NOTHING:
+      glColor3f(0.0, 0.0, 0.0);
+      break;
     case RED:
       glColor3f(1.0, 0.0, 0.0);
       break;
@@ -39,7 +38,6 @@ void Block::draw() {
       glColor3f(1.0, 0.0, 1.0);
       break;
   }
-  
   drawQuad(x*(size+20) + SPACE_X_RESOLUTION/4, size, y*(size+20) + 65, size);
 }
 

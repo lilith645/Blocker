@@ -3,7 +3,7 @@ CC = g++
 CFLAGS  = -Wall
 PROG = Blocker
 
-SRCS = ./src/main.cpp ./src/Game.cpp ./src/Block.cpp ./src/Random.cpp
+SRCS = ./src/main.cpp ./src/Game.cpp ./src/Block.cpp ./src/Random.cpp ./src/Selector.cpp
 
 LIBS = -lglfw -lGLC -lGLU -lGL -lpng
 

@@ -38,6 +38,7 @@
 #define UP_KEY                 265
 #define DOWN_KEY               264
 
+#define NOTHING                -1
 #define RED                    0
 #define GREEN                  1
 #define BLUE                   2

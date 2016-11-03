@@ -154,7 +154,11 @@ void display(GLFWwindow* window, float deltaTime) {
   prevKeyState['A'] = keyState['A'];
   prevKeyState['d'] = keyState['d'];
   prevKeyState['D'] = keyState['D'];
-  
+  prevKeyState[GLFW_KEY_SPACE] = keyState[GLFW_KEY_SPACE];
+  prevKeyState[GLFW_KEY_UP] = keyState[GLFW_KEY_UP];
+  prevKeyState[GLFW_KEY_DOWN] = keyState[GLFW_KEY_DOWN];
+  prevKeyState[GLFW_KEY_RIGHT] = keyState[GLFW_KEY_RIGHT];
+  prevKeyState[GLFW_KEY_LEFT] = keyState[GLFW_KEY_LEFT];
   glEnable (GL_BLEND);
   glBlendFunc (GL_ONE, GL_ONE);
 }
